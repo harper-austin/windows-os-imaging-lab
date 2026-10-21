@@ -66,9 +66,7 @@ Copied the captured WIM image to a Ventoy-formatted USB drive so it could be acc
 
 ### 5. Deploy to the Target VM
 
-Created a blank target VM and booted it into WinPE. Prepared the target disk using DiskPart, applied the captured image using DISM, and created boot files using BCDBoot.
-
-Prepared the target virtual disk, applied the captured Windows image, and configured the boot files. Verified that the deployed system successfully reached the Windows first-run setup screen.
+Created a blank target VM and booted it into WinPE. Used DiskPart to identify the target volumes, applied the captured Windows image using DISM, and configured the boot files using BCDBoot. After troubleshooting boot configuration issues, verified that the deployed Windows installation successfully reached the Windows first-run setup screen.
 
 ![DISM image deployment completed](screenshots/dism_deploy_complete.png)
 
