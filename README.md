@@ -80,3 +80,20 @@ Detached the WinPE ISO, set the virtual hard disk as the first boot device, and 
 
 ![Deployed Windows VM reaching first-run setup](screenshots/deploy_vm_booting.png)
 
+## Troubleshooting and Lessons Learned
+
+### File Path and Drive-Letter Troubleshooting
+- Encountered a file-not-found error during the initial WIM copy attempt.
+- Corrected the source path and verified the image was present on the destination USB drive.
+- Used directory listings to confirm the file copy completed successfully.
+
+### Boot Configuration Troubleshooting
+- Investigated boot issues after applying the Windows image to the target VM.
+- Reviewed the virtual machine's boot configuration and disk layout.
+- Corrected the boot setup and verified that the deployed Windows installation reached the first-run setup screen.
+
+### Key Takeaways
+- Windows imaging requires careful management of drive letters and disk layouts in WinPE.
+- DISM can capture and apply Windows images independently of a running Windows installation.
+- A successfully applied image still requires a compatible partition layout and boot configuration.
+- Verifying the final boot process is essential to confirming a successful deployment.
