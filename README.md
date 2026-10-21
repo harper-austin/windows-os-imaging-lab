@@ -68,7 +68,7 @@ Copied the captured WIM image to a Ventoy-formatted USB drive so it could be acc
 
 Created a blank target VM and booted it into WinPE. Prepared the target disk using DiskPart, applied the captured image using DISM, and created boot files using BCDBoot.
 
-The target was configured for legacy BIOS-style booting with an MBR-compatible partition layout.
+Prepared the target virtual disk, applied the captured Windows image, and configured the boot files. Verified that the deployed system successfully reached the Windows first-run setup screen.
 
 ![DISM image deployment completed](screenshots/dism_deploy_complete.png)
 
